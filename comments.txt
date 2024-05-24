@@ -1,0 +1,53 @@
+Seguir clase 63
+
+
+Crear proyecto: 
+en cmd comando yarn create vite, luego elegir nombre y lenguaje
+Iniciar proyecto:
+como correr la app en desarrollo -> abro la ruta del proyecto y comando yarn dev;
+
+Luego en cmd nos paramos en la carpeta del proyecto e instalo yarn con el comando: yarn install
+
+Iniciar test:
+para iniciar el modo test utilizamos el comando yarn test 
+
+para agregar dependencias de desarrollo es yarn add -D 
+
+para tener el test de jest debo instalarlo en el proyecto con el comnado yarn add --dev test, y luego agregar el 
+{
+  "scripts": {
+    "test": "jest"
+  }
+} en el packaje.json
+
+Desplegar aplicacion:
+yarn build
+
+
+ATAJOS:
+
+Copiar la línea actual hacia abajo: Shift + Alt + Flecha Abajo 
+
+Seleccionar todas las incidencias de la palabra actual y
+ editarlas simultáneamente: Ctrl + Shift + L
+
+
+instalaciones:
+
+yarn add --dev @testing-library/react
+yarn add -D jest-environment-jsdom
+yarn add @babel/preset-react --dev
+  estructura facil main:
+
+
+  titulo
+
+  input
+
+  listado
+    items
+
+
+Consejos:
+-Nunca se deben colocar la ejecucion de funciones directamente en un funcional component. 
+  porque cada vez que la funcion se vuelva a renderizar, va a volver a ejecutar la peticion.
